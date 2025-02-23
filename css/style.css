@@ -26,6 +26,8 @@ video {
     four lines of code do in the header block below
 */
 
+/* 1. Identify and debug the required design */
+
 header {
     position: absolute;
     top: 50%;
@@ -76,4 +78,21 @@ header span{
 .copyright a {
     color: #fff;
     text-underline-offset: 1.8px;
+}
+
+/* responsive styling */
+/* implement using CSS media queries */
+@media screen and (max-width: 1100px) {
+
+    header h1{
+        font-size:580;
+    }
+    .description {
+        position: absolute;
+        width: 91vw;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+        padding: 0.6rem 1.5rem; 
+    }
 }
