@@ -52,3 +52,85 @@ while(loopIterator < 10){
     console.log(`This is iteration #: ${loopIterator}`);
     loopIterator = loopIterator + 1;
 }
+
+// array declarations
+let studentGPA = [3.14, 2.0, 3.5, 4.0];
+console.log(studentGPA[2]);
+let studentRecord = ["John", 3.15, "Senior", ["fishing", "swimming"]];
+
+// for (let index = 0; index < Array.length; index++){
+//     const element = array[index];
+// }
+
+const studentOne = {
+    firstName: "John",
+    lastName: "Doe",
+    address: {
+        street: "123 street",
+        zip: 48309,
+        state: "MI"
+    },
+    hobby: ["swim", "fish", "dive"],
+    isSenior: true,
+}
+
+console.log(studentOne.lastName);
+console.log(studentOne.address.zip);
+console.log(studentOne.hobby[2]);
+
+// structures in JS and object array
+const studentStorage = [
+    {
+    firstName: "John",
+    lastName: "Doe",
+    address: {
+        street: "123 street",
+        zip: 48309,
+        state: "MI"
+    },
+    hobby: ["swim", "fish", "dive"],
+    isSenior: true,
+}, 
+{
+    firstName: "John",
+    lastName: "Doe",
+    address: {
+        street: "123 street",
+        zip: 48309,
+        state: "MI"
+    },
+    hobby: ["swim", "fish", "dive"],
+    isSenior: true,
+}
+];
+
+console.log(studentStore[1].firstName);
+
+// Functions:
+// traditional way of declaring a function in JS
+function sum(int ,param1, param2) {
+    // declare or put additional logic here
+    return param1 + param2;
+}
+
+// invoke or call the function
+let value1 = 3;
+let value2 = 5;
+let sumOutput = sum(2, 5);
+
+
+// Arrow function syntax in JS
+
+// input --> function body --> output 
+let name = (param1, paramK) => {
+    // Function body
+};
+
+let sumArrowFunction = (param1, param2) => {
+    return param1 + param2;
+};
+
+// call the above function
+console.log(sumArrowFunction(2, 4));
+
+// call 
